@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bienvenido de Nuevo,"
+            android:text="@string/bienvenido_de_nuevo"
             android:textColor="@color/azul"
             android:textSize="27sp"
             android:textStyle="normal" />
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inicia Sesión!"
+            android:text="@string/inicia_sesi_n"
             android:textColor="@color/azul"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -63,7 +63,7 @@
                 android:layout_marginTop="1dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                android:text="Ingrese su correo"
+                android:text="@string/ingrese_su_correo"
                 android:textColor="@color/azul"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -77,7 +77,7 @@
             android:layout_marginRight="50dp">
 
             <EditText
-                android:id="@+id/contraseñaText"
+                android:id="@+id/passwordText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -93,7 +93,7 @@
                 android:layout_marginLeft="11dp"
                 android:layout_marginTop="1dp"
                 android:paddingLeft="1dp"
-                android:text="Contraseña"
+                android:text="@string/contrase_a"
                 android:textColor="@color/azul"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -109,15 +109,15 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/iniciarSesionButton"
-            android:textAllCaps="false"
-            android:layout_marginTop="20dp"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            app:cornerRadius="322dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/azul"
-            android:text="Iniciar Sesión"
+            android:text="@string/iniciar_sesion"
+            android:textAllCaps="false"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:textSize="15sp"/>
+            app:cornerRadius="322dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ResgistrarButton"
@@ -127,7 +127,7 @@
             android:layout_height="50dp"
             app:cornerRadius="322dp"
             android:backgroundTint="@color/azul"
-            android:text="Resgistrate"
+            android:text="@string/registrarse"
             android:textStyle="bold"
             android:textSize="15sp"/>
 

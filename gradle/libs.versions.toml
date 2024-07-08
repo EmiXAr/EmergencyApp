@@ -1,5 +1,5 @@
 [versions]
-agp = "8.3.0"
+agp = "8.5.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -12,8 +12,8 @@ firebaseAuth = "23.0.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version = "1.2.1" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version = "3.6.1" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }

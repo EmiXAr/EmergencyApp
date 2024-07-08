@@ -12,9 +12,6 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -34,24 +31,24 @@ public class Login extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        EditText inputUsuario = findViewById(R.id.correoText);
-        EditText inputContraseña = findViewById(R.id.contraseñaText);
+        EditText inputUser = findViewById(R.id.correoText);
+        EditText inputPassword = findViewById(R.id.passwordText);
         MaterialButton sesionButton = findViewById(R.id.iniciarSesionButton);
         MaterialButton registrarButton = findViewById(R.id.ResgistrarButton);
 
         sesionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usuarioIngresado = inputUsuario.getText().toString().trim();
-                String claveIngresada = inputContraseña.getText().toString().trim();
+                String usuarioIngresado = inputUser.getText().toString().trim();
+                String claveIngresada = inputPassword.getText().toString().trim();
 
                 if (usuarioIngresado.isEmpty() || claveIngresada.isEmpty()) {
                     Toast.makeText(Login.this, "Ingrese sus credenciales", Toast.LENGTH_SHORT).show();
                 } else {
                     iniciarSesion(usuarioIngresado, claveIngresada);
                 }
-                inputUsuario.setText("");
-                inputContraseña.setText("");
+                inputUser.setText("");
+                inputPassword.setText("");
             }
         });
 

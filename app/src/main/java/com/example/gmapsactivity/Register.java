@@ -10,9 +10,6 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -32,7 +29,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         EditText inputUsuario = findViewById(R.id.correoText);
-        EditText inputContraseña = findViewById(R.id.contraseñaText);
+        EditText inputPassword = findViewById(R.id.passwordText);
         MaterialButton RegistrarButton = findViewById(R.id.ResgistrarButton);
         EditText inputNombre = findViewById(R.id.Nombre);
         EditText inputPhone = findViewById(R.id.telefonoText);
@@ -44,7 +41,7 @@ public class Register extends AppCompatActivity {
             public void onClick(View v) {
                 String email,password,apellido, nombre, telefono;
                 email=String.valueOf(inputUsuario.getText());
-                password=String.valueOf(inputContraseña.getText());
+                password=String.valueOf(inputPassword.getText());
                 nombre=String.valueOf(inputNombre.getText());
                 telefono=String.valueOf(inputPhone.getText());
 
