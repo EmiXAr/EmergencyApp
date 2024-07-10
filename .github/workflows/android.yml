@@ -40,6 +40,6 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Run LoginTest
-      run: ./gradlew test --tests com.example.gmapsactivity.test.LoginTest
+      run: ./gradlew app:test --tests com.example.gmapsactivity.test.LoginTest
     - name: Run RegisterTest
-      run: ./gradlew test --tests com.example.gmapsactivity.test.RegisterTest
+      run: ./gradlew app:test --tests com.example.gmapsactivity.test.RegisterTest
